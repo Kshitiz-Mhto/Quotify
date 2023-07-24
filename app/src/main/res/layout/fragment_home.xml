@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/HomeConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quotify_home_screen"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/quotify_logo_remove_bg" />
+        <TextView
+            android:id="@+id/etProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="17dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="right"
+            android:text="Wise Words for 💩 World"
+            android:textStyle="bold"
+            android:textColor="#190202"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/catAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="All"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Age"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAlone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Alone"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAmazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Amazing"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAnger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Anger"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAnniversary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Anniversary"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catArchitecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Architecture"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Art"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catAttitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Attitude"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catBeauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Beauty"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catBest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Best"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Birthday"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Business"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Car"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Change"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catCommunication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Communication"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Computer"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catCool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Cool"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catCourage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Courage"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Dad"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Dating"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Death"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Design"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Diet"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/catDreams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:backgroundTint="@null"
+                android:background="@drawable/ripple_effect"
+                android:text="Dreams"
+                android:textAlignment="center"
+                android:textColor="#FB2658"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

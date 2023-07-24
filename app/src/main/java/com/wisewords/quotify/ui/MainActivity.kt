@@ -1,4 +1,4 @@
-package com.wisewords.quotify.viewmodal
+package com.wisewords.quotify.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

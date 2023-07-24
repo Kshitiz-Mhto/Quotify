@@ -1,4 +1,10 @@
-# Quotify
+<p align="center" style="font-size: 40px;">
+Quotify
+</p>
+
+<p align="center">
+	<img src="app/src/main/res/drawable/quotify_logo.png" alt="homescreen" width="210" height="auto">
+</p>
 
 ```
 
